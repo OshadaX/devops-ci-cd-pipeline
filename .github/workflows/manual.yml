@@ -18,6 +18,9 @@ on:
         options:
           - Male
           - Female
+      graduated:
+        description: 'Graduated?'
+        type: boolean
         
   
 
@@ -34,6 +37,9 @@ jobs:
 
       - name: Gender
         run: echo "${{inputs.gender}}"
+
+      - name: Graduated
+        run: echo "${{inputs.graduated}}"
     
 
  
