@@ -3,10 +3,15 @@ name: Manual Workflow
 
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        description: 'NAME'
+        type: string
+        default: 'test'
   
 
 jobs:
-  demo:
+  Manual:
     runs-on: ubuntu-latest
 
     steps:
